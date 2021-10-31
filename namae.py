@@ -16,35 +16,14 @@ def ArtistAge():
 age = ArtistAge()
 
 # I tried using direct substitution of the function
-def ArtistAddress(Address):
-    return ArtistAddress
-    
-ArtistAddress(input("Address: "))
+def ArtistAddress():
+     jusho = input("Address: ")
+     return jusho
 
-def Statement(Namae, Toshi, Jusho):
-    print(f"Hi, my name is {name}. I am {age} years old and {ArtistAddress} ")
+Address = ArtistAddress()
 
-Statement(name, age, ArtistAddress)
+def Statement():
+    statement = input(f"Hi, my name is {name}. I am {age} years old and I live in {Address}.")
+    return statement
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
+print(Statement())

@@ -11,7 +11,7 @@ def TotalApple(applePrice,numberApple):
 Apple = 20
 appleYouWant = int(input("How many apples do you want: "))
 
-TotalApple (Apple, appleYouWant)
+apple = TotalApple (Apple, appleYouWant)
 
 def TotalOrange(orangePrice,numberOrange):
     Product = orangePrice*numberOrange
@@ -20,5 +20,16 @@ def TotalOrange(orangePrice,numberOrange):
 Orange = 25
 orangeYouWant = int(input("How many Oranges do you want: "))
 
-print(TotalOrange(Orange,orangeYouWant))
+orange = TotalOrange(Orange,orangeYouWant)
 
+def TotalAmount(amountApple,amountOrange):
+    Sum = int(amountApple + amountOrange)
+    return Sum
+
+Amount = TotalAmount(apple,orange)          #kind of forgot how to print lmao.
+
+def statement():
+    finalStatement = print(f"The total amount is {Amount}.")
+    return finalStatement
+
+print(statement())

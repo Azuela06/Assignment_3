@@ -3,7 +3,7 @@
 # In this program, I need to find how many apples I can buy if I input a certain amount
 
 # Procedures:
-    # I need something where once can input their money
+    # I need something where one can input their money
     # Then input the price of the apple they're buying
     # I think the next would be division, wherein; this will be the max number of apple one can buy
     # Then, multiply the number of apple, wherein; the price and the max number would be the variables
@@ -12,15 +12,25 @@
 
 # Starting Officially! currently 23:12 
 
-def Money():
-    howMuch = int(input("How much money you have in hand: "))
-    return howMuch
+def Money(money,apple):
+    max = money//apple
+    return max
 
-money = print(f"You currently have {Money()} in hand.")
+cash = int(input("How much money you have in hand: "))
+price = int(input("How much each apple cost: "))
 
-def Pay():
-    price = int(input("How much is the Apple?: "))
-    return price
+print(f"You currently have {cash} pesos in hand.")
+maxNumber = Money(cash,price)
 
-Price = print(f"The apple costs {Pay()} pesos.")
+print(f"You can buy {maxNumber} apples with the money you have." )
 
+def Payables(pay,now):
+    liability = pay*now
+    return liability
+
+Cost = Payables(maxNumber,price)
+print(f"The amount is {Cost}.")
+
+
+
+    

@@ -21,7 +21,7 @@ price = int(input("How much each apple cost: "))
 
 print(f"You currently have {cash} pesos in hand.")
 maxNumber = Money(cash,price)
-
+# I included the printing so the user can follow what they are doing
 print(f"You can buy {maxNumber} apples with the money you have." )
 
 def Payables(pay,now):
@@ -31,6 +31,16 @@ def Payables(pay,now):
 Cost = Payables(maxNumber,price)
 print(f"The amount is {Cost}.")
 
+def Change():
+    change = cash-Cost
+    return change
 
+total = Change()
+
+def final():
+    amount = print(f"You can buy {maxNumber} apples and your change is {total} pesos.")
+    return amount
+
+print(final())
 
     
